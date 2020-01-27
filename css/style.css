@@ -8,14 +8,147 @@
 @font-face {
   font-family: 'Gilroy';
   src: url('/fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
-      url('/fonts/gilroy/Gilroy-Light.woff') format('woff');
+       url('/fonts/gilroy/Gilroy-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gilroy';
   src: url('/fonts/gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
-      url('/fonts/gilroy/Gilroy-ExtraBold.woff') format('woff');
+       url('/fonts/gilroy/Gilroy-ExtraBold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
+}
+
+/* СТИЛИ ДЛЯ БЛОКА NAVBAR */
+
+.navbar {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #FAFAFA;
+}
+.wrapper {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+.navbar__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  font-family: Homemade Apple;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 39px;
+  color: #231F20;
+}
+
+.navbar__menuLink {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 21px;
+}
+
+.navbar__button {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F7941E;
+  padding: 14px 25px 8px 24px;
+  border-radius: 5px;
+  border: 1px solid #F7941E;
+  outline: none;
+  cursor: pointer;
+  background-color: #FAFAFA;;
+}
+
+/* СТИЛИ ДЛЯ БЛОКА FEATURES */
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  background: #F1F1F2;
+}
+.features__item {
+  flex: 0 0 50%;
+}
+/* .item_text {
+  padding: 154px 200px 0px 162px;
+} */
+.features__textContainer {
+  text-align: left;
+  padding: 144px 124px 0px 162px;
+}
+.features__titleTop {
+  font-family: Gilroy;
+  font-size: 56px;
+  line-height: 69px;
+  color: #000000;
+  margin-bottom: 40px;
+  /* padding: 144px 124px 0px 162px; */
+}
+.features__descriptionTop {
+  font-family: Gilroy;
+  font-size: 20px;
+  line-height: 140.62%;
+  color: #000000;
+  margin-bottom: 53px;
+}
+.features__buttonTop {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 5px;
+  background: #F7941E;
+  padding: 23px 24px 17px 25px;
+  cursor: pointer;
+  border: none;
+}
+.features__picContainerTop {
+  padding-top: 100%;
+  height: 100%;
+  background: url(/img/Background_header_couple.jpg) center center / cover no-repeat;
+}
+.features__picContainerBottom {
+  padding-top: 100%;
+  height: 100%;
+  background: url(/img/background_header_thanks.jpg) center center / cover no-repeat;
+}
+.features__titleBottom {
+  font-family: Gilroy;
+  font-size: 32px;
+  line-height: 140.62%;
+  color: #000000;
+  margin-bottom: 23px;
+}
+.features__descriptionBottom {
+  font-family: Gilroy;
+  font-size: 20px;
+  line-height: 140.62%;
+  text-align: justify;
+  color: #000000;
+  margin-bottom: 35px;
+}
+.features__buttonBottom {
+  padding: 21px 46px 14px 47px;
+  border-radius: 5px;
+  border: 1px solid #F7941E;
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 134.77%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F7941E;
+  background: #F1F1F2;
+  cursor: pointer;
+  outline-color: orange;
 }
