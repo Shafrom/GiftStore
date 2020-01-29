@@ -211,16 +211,16 @@ a {
   margin-bottom: 24px;
 }
 .giftOcassions_birthday {
-  background: url(/img/Birthday_pic.jpg) center center / cover no-repeat;
+  background: url(../img/Birthday_pic.jpg) center center / cover no-repeat;
 }
 .giftOcassions_anniversary {
-  background: url(/img/Anniversary_pic.jpg) center center / cover no-repeat;
+  background: url(../img/Anniversary_pic.jpg) center center / cover no-repeat;
 }
 .giftOcassions_valentinesday {
-  background: url(/img/Valentinesday_pic.jpg) center center / cover no-repeat;
+  background: url(../img/Valentinesday_pic.jpg) center center / cover no-repeat;
 }
 .giftOcassions_christmas {
-  background: url(/img/Christmas_pic.jpg) center center / cover no-repeat;
+  background: url(../img/Christmas_pic.jpg) center center / cover no-repeat;
 }
 .giftOcassions__name {
   font-family: Gilroy;
