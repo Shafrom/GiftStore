@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
+}
+
+a {
   text-decoration: none;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('/fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
@@ -51,7 +53,12 @@
   font-size: 18px;
   line-height: 22px;
   margin-right: 21px;
+  color: black;
 }
+.navbar__menuLink:active {
+  color: red;
+}
+
 
 .navbar__button {
   font-family: Gilroy;
@@ -233,3 +240,253 @@
   padding-left: 24px;
 }
 
+/* СТИЛИ ДЛЯ БЛОКА GETSTARTED */
+
+.getStarted {
+  background-color: #F7941E;
+  padding-top: 81px;
+  padding-bottom: 69px;
+}
+.getStartedWrapper {
+  max-width: 970px;
+  margin: 0 auto;
+}
+.getStarted__container {
+  display: flex;
+  justify-content: space-between;
+}
+.getStarted__text {
+  text-align: left;
+}
+.getStarted__title {
+  font-family: Gilroy;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 140.62%;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.getStarted__description {
+  font-family: Gilroy;
+  font-size: 32px;
+  line-height: 140.62%;
+  color: #000000;
+}
+.getStarted__buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.getStarted__button {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button_black {
+  padding: 15px 30px 15px 30px;
+  background: #231F20;
+  color: #FFFFFF;
+  margin-right: 16px;
+  border: none;
+}
+.button_orange {
+  padding: 15px 30px 15px 30px;
+  color: #000000;
+  border: 1px solid #000000;
+  background: #F7941E;
+}
+
+/* СТИЛИ ДЛЯ БЛОКА OURBLOG */
+
+.ourBlog {
+  background-color: #fff;
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+.ourBlog__top {
+  text-align: center;
+}
+.ourBlog__title {
+  font-family: Gilroy;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.ourBlog__description {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 135.94%;
+  color: #000000;
+  margin-bottom: 73px;
+}
+.ourBlog__item {
+  display: flex;
+  max-width: 1170px;
+}
+.item_center {
+  margin-bottom: 50px;
+  height: 370px;
+}
+.ourBlog__centerPicContainer {
+  width: 34%;
+  flex-shrink: 0;
+}
+.ourBlog-pic {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+.ourBlog__centerContent {
+  background: #231F20;
+  /* flex-shrink: 0; */
+  width: 100%;
+}
+.ourBlog__centerContent-name {
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 140.62%;
+  color: #FFFFFF;
+  padding-top: 58px;
+  padding-left: 75px;
+  margin-bottom: 10px;
+
+}
+.ourBlog__centerContent-title {
+  font-family: Gilroy;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+  padding-left: 75px;
+  margin-bottom: 70px;
+  padding-right: 200px;
+
+}
+.ourBlog__centerContent-link {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 140.62%;
+  color: #FFFFFF;
+  padding-left: 75px;
+}
+
+.ourBlog__bottomContent {
+  padding-right: 35px;
+  padding-left: 48px;
+  transition: 0.5s;
+  margin-right: 30px;
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+.ourBlog__bottomContent:hover {
+    transform: translate(-5px, -5px);
+    background: #FFFFFF;
+    box-shadow: 5px 5px 20px 15px lightgrey;
+}
+.ourBlog__bottomContent-title {
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140.62%;
+  color: #000000;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+.ourBlog__bottomContent-description {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 140.62%;
+  color: #000000;
+  margin-bottom: 30px;
+  padding-right: 30px;
+}
+.ourBlog__bottomContent-link {
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 140.62%;
+  color: #000000;
+  margin-bottom: 45px;
+}
+
+/* СТИЛИ ДЛЯ БЛОКА FOOTER */
+
+.footer {
+  padding-top: 115px;
+  padding-bottom: 35px;
+  background: #FAFAFA;
+  text-align: center;
+}
+/* .footer__items {
+  max-width: 620px;
+} */
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.footer__menu::after {
+  position: absolute;
+  content: "";
+  top: 70px;
+  right: 70px;
+  left: 70px;
+  height: 1px;
+  background-color: black;
+}
+.footer__menu-item {
+  display: flex;
+}
+.footer__menu-link:first-child {
+  margin-right: 80px;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 140.62%;
+  color: #000000;
+}
+.footer__menu-link {
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 140.62%;
+  font-weight: 600;
+  color: #000000;
+}
+.footer__menu-logo {
+  width: 320px;
+}
+.footer__menu-logo {
+  font-family: Homemade Apple;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 39px;
+  text-align: center;
+  color: #F7941E;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.footer__link {
+  margin-right: 20px;
+}
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+.footer__copyright-item {
+  margin-right: 20px;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 140.62%;
+  text-align: center;
+  color: #000000;
+}
